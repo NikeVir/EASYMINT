@@ -91,7 +91,7 @@ export default function Mintnft() {
           )
         }
       </div>
-      <Link to="/multimint"  type="submit" style={{position:"absolute",width:"200px", left:"20%",bottom:"10px",textDecoration:"none",fontSize:"1.5vw"}} className="mint-btn"> &rarr; Mint Multiple</Link>
+      <Link to="/multimint"  type="submit" style={{position:"absolute",width:"200px", left:"20%",bottom:"10px",textDecoration:"none",fontSize:"1.2vw"}} className="mint-btn"> &rarr; Mint Multiple</Link>
 
 
     </div >
