@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import '../css/viewnft2.css'
 import { Link } from 'react-router-dom';
-import img2 from '../assets/emoji.png'
+import img2 from '../assets/emoji.jpeg'
 import UserContext from "../ContexProvider";
 import axios from "axios";
 import MoonLoader from "react-spinners/ClipLoader";

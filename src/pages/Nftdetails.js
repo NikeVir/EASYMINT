@@ -31,7 +31,7 @@ export default function Nftdetails() {
                             <div className="NftDetail_grid-item">
                                 <div className="NftDetail_item-style">
                                     <div className="thumb">
-                                    <img style={{ maxHeight: "250px", minHeight: "250px" }}src={`https://ipfs.io/ipfs/${resdata[0].token.metadata.thumbnailUri.split("ipfs://")[1]
+                                    <img style={{ maxHeight: "336px", minHeight: "166px" }}src={`https://ipfs.io/ipfs/${resdata[0].token.metadata.thumbnailUri.split("ipfs://")[1]
                                                 }`} className="NftDetail_image-avatar" alt="" />
                                     </div>
 
@@ -44,9 +44,7 @@ export default function Nftdetails() {
                                             <a href="#">
                                                 <img src="uthor.jpg" className="NftDetail_image-avatar" alt="" />
                                             </a>
-                                            <a href="#" className="NftDetail_author-text">
-                                                @owner name
-                                            </a>
+                             
                                             <i className="NftDetail_r"></i>
                                         </div>
 

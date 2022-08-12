@@ -2,28 +2,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap);
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: space-between;
-    background-color: #023047;
-    margin: 0;
-    background-color: #1e6091;
-    height: 100vh;
-    overflow-y: scroll;
-    font-family: 'Bebas Neue', cursive;
-    -webkit-animation: fadeIn 1 0.5s ease-out;
-    -moz-animation: fadeIn 1 0.5s ease-out;
-    -o-animation: fadeIn 1 0.5s ease-out;
-    animation: fadeIn 1 0.5s ease-out;
-
-}
 
 
 .nft {
@@ -54,6 +32,7 @@ body {
 }
 
 .box {
+    margin-top: 10%;
     width: 378px;
     height: 82px;
     background-color: #DDFFF7;
@@ -293,6 +272,8 @@ body {
     }
 
     .box {
+        margin-top: 20vh;
+
         width: 188px;
         height: 44px;
     }
@@ -331,6 +312,7 @@ body {
     }
 
     .box {
+        margin-top: 25vh;
         width: 148px;
         height: 34px;
     }

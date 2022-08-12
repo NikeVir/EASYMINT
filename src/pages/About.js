@@ -16,7 +16,10 @@ function About() {
                     <p>About US</p>
                 </div>
                 <div className="textabout">
-                We are a group of 3 highly enthusiastic developers built "EasyMint" - A Seamless NFT minting platform on Tezos. Using React as front-end, the web app is highly responsive and smooth to mint.
+
+                   
+                The web app is currently in Beta phase. 
+There's always a better version on it's way.We are a group of 3 highly enthusiastic developers built "EasyMint" - A Seamless NFT minting platform on Tezos. Using React as front-end, the web app is highly responsive and smooth to mint.
 Features such as Multiple NFTs minting and NFT minting to other address are implemented and fully operational, Many more exciting features will be added soon.
                 </div>
                 <div className="social-icons"><a href="https://twitter.com/EasyMint001" target="_blank" className="social-link twitter-link "><img src={twitter} width={36} height={36} alt="" /></a>

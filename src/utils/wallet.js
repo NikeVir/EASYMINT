@@ -56,7 +56,7 @@ const mulmintNFT = async (address, urlobj) => {
         for (var i = 0; i < urlobj.length; i++) {
             url = char2Bytes(urlobj[i].toString());
             console.log(url)
-            const op = contract.methods.mint(address, amount, MichelsonMap.fromLiteral({ "NFT": url }), token_id.length + i).toTransferParams();
+            const op = contract.methods.mint(address, amount, MichelsonMap.fromLiteral({ "": url }), token_id.length + i).toTransferParams();
             op.kind = OpKind.TRANSACTION;
             obj[i] = op
         }

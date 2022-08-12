@@ -7,7 +7,8 @@ import { uploadToIpfs } from "../utils/upload";
 
 export default function Multimint() {
   const {useraddress} = useContext(UserContext)
-  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [loading, setloading] = useState(false)
+
   const [formdata, setFormdata] = useState([
     {name: "", symbol: "", desc: "" },
   ]);
@@ -24,7 +25,9 @@ export default function Multimint() {
   };
 
   const submit = async(e) => {
+    setloading(true)
     e.preventDefault();
+
     console.log(formdata);
     var ipfs =[]
     for(var i=0;i<formdata.length;i++){
@@ -32,6 +35,8 @@ export default function Multimint() {
       ipfs[i] =res;
     }
     console.log(ipfs)
+    setloading(false)
+
     const op = await mulmintNFT(useraddress,ipfs)
     console.log(op)
   };
@@ -48,8 +53,9 @@ export default function Multimint() {
   }
 
   return (
-    <Container className="multimint">
-      <div className="container">
+    <div className="multimint">
+
+      <div  className="container">
         {formdata.map((input, index) => (
           <form  onSubmit={submit} key={index} className="multimint_form">
             
@@ -130,6 +136,23 @@ export default function Multimint() {
               <input style={{background:"#1e8098"}} type="submit" onClick={submit} value="Submit" />
             </div>
       </div>
-    </Container>
+      {
+          !loading ? "" : (
+            <div className="block-ui-container">
+              <div className="block-ui-overlay" />
+              <div className="block-ui-message-container">
+                <div className="block-ui-message">
+                  <h4>Uploading to IPFS..</h4>
+                  <div className="loading-indicator">
+                    <svg id="indicator" viewBox="0 0 100 100">
+                      <circle id="circle" cx="50" cy="50" r="45" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        }
+    </div>
   );
 }

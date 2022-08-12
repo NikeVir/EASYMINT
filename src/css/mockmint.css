@@ -317,7 +317,7 @@ input[type="checkbox"]:checked~.address,
   color: #e0f0f6;
   margin: 20px 0;
   background-color: #133c5b;
-  height: 60px;
+  height: 50px;
   padding: 5px 8px;
   border: none;
   width: 75vw;
@@ -382,7 +382,7 @@ input[type="checkbox"]:checked~.address,
   #other-mint,
   #self-mint {
     margin: 0%;
-    height: 16vh;
+    height: 10vh;
     width: 60vw;
     border-radius: 15px;
 
@@ -404,7 +404,7 @@ input[type="checkbox"]:checked~.address,
     left:0vh;
     flex-wrap: nowrap;
     flex-direction: column;
-    height: 65vh;
+    height: auto;
     padding-bottom: 15px;
   }
 
@@ -436,7 +436,7 @@ input[type="checkbox"]:checked~.address,
   #other-mint,
   #self-mint {
     margin: 0%;
-    height: 16vh;
+    height: 10vh;
     width: 60vw;
     border-radius: 15px;
 
