@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    background-color: #023047;
+    margin: 0;
+    height: 100vh;
+    background-color: #1e6091;
+    overflow-y: scroll;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-animation: fadeIn 1 0.5s ease-out;
+    -moz-animation: fadeIn 1 0.5s ease-out;
+    -o-animation: fadeIn 1 0.5s ease-out;
+    animation: fadeIn 1 0.5s ease-out;
+}
+
+.home_light {
+    position: absolute;
+    width: 0px;
+    opacity: .75;
+    background-color: white;
+    box-shadow: #e9f1f1 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.home_x1 {
+    -webkit-animation: floatUp 4s infinite linear;
+    -moz-animation: floatUp 4s infinite linear;
+    -o-animation: floatUp 4s infinite linear;
+    animation: floatUp 4s infinite linear;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+.x2 {
+    -webkit-animation: floatUp 7s infinite linear;
+    -moz-animation: floatUp 7s infinite linear;
+    -o-animation: floatUp 7s infinite linear;
+    animation: floatUp 7s infinite linear;
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    left: 15%;
+}
+
+.x3 {
+    -webkit-animation: floatUp 2.5s infinite linear;
+    -moz-animation: floatUp 2.5s infinite linear;
+    -o-animation: floatUp 2.5s infinite linear;
+    animation: floatUp 2.5s infinite linear;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    left: -15%;
+}
+
+.home_x4 {
+    -webkit-animation: floatUp 4.5s infinite linear;
+    -moz-animation: floatUp 4.5s infinite linear;
+    -o-animation: floatUp 4.5s infinite linear;
+    animation: floatUp 4.5s infinite linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    left: -34%;
+}
+
+.home_x5 {
+    -webkit-animation: floatUp 8s infinite linear;
+    -moz-animation: floatUp 8s infinite linear;
+    -o-animation: floatUp 8s infinite linear;
+    animation: floatUp 8s infinite linear;
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    transform: scale(2.2);
+    left: -57%;
+}
+
+.home_x6 {
+    -webkit-animation: floatUp 3s infinite linear;
+    -moz-animation: floatUp 3s infinite linear;
+    -o-animation: floatUp 3s infinite linear;
+    animation: floatUp 3s infinite linear;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    left: -81%;
+}
+
+.home_x7 {
+    -webkit-animation: floatUp 5.3s infinite linear;
+    -moz-animation: floatUp 5.3s infinite linear;
+    -o-animation: floatUp 5.3s infinite linear;
+    animation: floatUp 5.3s infinite linear;
+    -webkit-transform: scale(3.2);
+    -moz-transform: scale(3.2);
+    -o-transform: scale(3.2);
+    transform: scale(3.2);
+    left: 37%;
+}
+
+.home_x8 {
+    -webkit-animation: floatUp 4.7s infinite linear;
+    -moz-animation: floatUp 4.7s infinite linear;
+    -o-animation: floatUp 4.7s infinite linear;
+    animation: floatUp 4.7s infinite linear;
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transform: scale(1.7);
+    left: 62%;
+}
+
+
+.home_x9 {
+    -webkit-animation: floatUp 4.1s infinite linear;
+    -moz-animation: floatUp 4.1s infinite linear;
+    -o-animation: floatUp 4.1s infinite linear;
+    animation: floatUp 4.1s infinite linear;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    left: 85%;
+}
+
+
+
+@-webkit-keyframes floatUp {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0vh;
+        opacity: .8;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -100vh;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes floatUp {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0vh;
+        opacity: .8;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -100vh;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes floatUp {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0vh;
+        opacity: .8;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0vh;
+        opacity: .8;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -100vh;
+        opacity: 0;
+    }
+}
+
+/* section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.home_displaycontent {
+    margin-left: 18vw;
+    position: relative;
+    top: 34vh;
+    font-size: 110px;
+    text-align: left;
+    width: 64vw;
+}
+
+.home_displaycontent h2 {
+    color: #fff;
+    font-size: 7vw;
+    position: absolute;
+    transform: translate(0%, -40%);
+    letter-spacing: 4px;
+}
+
+.home_displaycontent h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #90e0ef;
+}
+
+.home_displaycontent h2:nth-child(2) {
+    color: #90e0ef;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                11% 40%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+.home_header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 13px;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    font-size: 2em;
+}
+
+
+
+#home_footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    -webkit-transform: translate(95vw, 90vh);
+    -moz-transform: translate(95vw, 90vh);
+    transform: translate(95vw, 90vh);
+    transform: translate(95vw, 90vh);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #023047;
+    margin: 0;
+    height: 100vh;
+    background-color: #1e6091;
+    overflow-y: hidden;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-animation: fadeIn 1 0.5s ease-out;
+    -moz-animation: fadeIn 1 0.5s ease-out;
+    -o-animation: fadeIn 1 0.5s ease-out;
+    animation: fadeIn 1 0.5s ease-out;
+}
+
+.home_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mint-nft-home-btn {
+    background-color: #00143a;
+    color: white;
+    padding: 27px 60px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: x-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 0 20px rgba(196, 244, 252, 0.374);
+    position: relative;
+    top: 70vh;
+    left: 0vw;
+}
+
+#mint-nft-home-btn:hover {
+    background-color: #000f2a;
+    box-shadow: 0 0 0px rgba(196, 244, 252, 0.374);
+    transition: 0.25s;
+}
+
+#mint-nft-home-btn:active {
+    color: #000f2a;
+    background-color: whitesmoke;
+    box-shadow: 0 0 0px rgba(196, 244, 252, 0.374);
+    transition: 0.1s;
+}
+
+#connect-wallet {
+    background-color: whitesmoke;
+    position: relative;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    left: 42vw;
+    top: 2vh;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    box-shadow: 3px 4px 10px #0303033b;
+    border-radius: 8px;
+    overflow: auto;
+    color: #023047;
+}
+
+#connect-wallet:hover {
+    color: #012e45;
+    cursor: pointer;
+    background-color: rgb(222, 219, 219);
+    transition: 0.4s ease-in;
+}
+
+#connect-wallet:active {
+    background-color: #012e45;
+    cursor: pointer;
+    color: rgb(222, 219, 219);
+    transition: 0.4s ease-in;
+}
+
+#disconnect-wallet {
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-weight: 700;
+    position: relative;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    left: 40vw;
+    top: 2vh;
+    border: none;
+    box-shadow: 3px 4px 10px #0303033b;
+    border-radius: 8px;
+
+    overflow: auto;
+
+    color: #023047;
+}
+
+#disconnect-wallet:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(220, 3, 3);
+    box-shadow: 3px 4px 4px #0303033b;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 755px) {
+
+    #connect-wallet,
+    #disconnect-wallet {
+
+        position: relative;
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        left: 30vw;
+        top: 3vh;
+
+    }
+
+    #mint-nft-home-btn {
+        font-size: large;
+        position: relative;
+        top: 60vh;
+        left: 10vw;
+    }
+
+    .home_displaycontent {
+        margin-left: 18vw;
+        position: relative;
+        top: 34vh;
+        font-size: 180px;
+        text-align: left;
+        width: 64vw;
+        left: 2vw;
+    }
+
+    .home_displaycontent h2 {
+        color: #fff;
+        font-size: 10vw;
+        position: absolute;
+        transform: translate(0%, -40%);
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+
+    #connect-wallet,
+    #disconnect-wallet {
+
+        position: relative;
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        left: 30vw;
+        top: 3vh;
+
+    }
+
+    #mint-nft-home-btn {
+        padding: 18px 40px;
+        font-size: 15px;
+        position: relative;
+        top: 60vh;
+        left: 10vw;
+    }
+
+    .home_displaycontent {
+        margin-left: 18vw;
+        position: relative;
+        top: 34vh;
+        font-size: 180px;
+        text-align: left;
+        width: 64vw;
+        left: -8vw;
+    }
+
+    .home_displaycontent h2 {
+        color: #fff;
+        font-size: 12.5vw;
+        position: absolute;
+        transform: translate(0%, -40%);
+        letter-spacing: 4px;
+    }
+}

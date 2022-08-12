@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap);
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e6091;
+    z-index: 1;
+}
+
+
+
+.navigation {
+    position: fixed;
+    inset: 20px 0px 20px 0px;
+    border-radius: 0px 50px 50px 0px;
+    width: 80px;
+    min-height: 500px;
+    background-color: #fff;
+    transition: 0.5S;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* visibility: hidden; */
+
+}
+
+
+
+.navigation.open {
+    width: 250px;
+}
+
+.navigation ul {
+    margin: 0 -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4vh;
+    width: 100%;
+}
+
+.navigation ul span {
+    list-style: none;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation ul span .acive {
+    transform: translate(30px);
+}
+
+.navigation.open ul span .acitve {
+    transform: translate(10px);
+}
+
+.navigation ul span a {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.navigation ul span a .icon,
+#mintbutton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 81px;
+    height: 65px;
+    line-height: 60px;
+    color: #222;
+    border-radius: 10px;
+    font-size: 1.75em;
+    transition: 0.5s;
+}
+
+.navigation ul span a .icon:hover {
+    color: #fff;
+    background-color: #3877a8e8;
+    transition: 0.5s;
+}
+
+.navigation ul span a .icon:active {
+    color: #fff;
+    background-color: #1e6091;
+    transition: 0.5s;
+}
+
+.navigation ul span.active a .icon {
+    color: #fff;
+    background-color: #1e6091;
+}
+
+.navigation ul span a.icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #1e6091;
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navigation ul span.active a .icon::before {
+    opacity: 0.5s;
+}
+
+#mintbutton {
+    scale: 1.1;
+    background-color: #97c1e1;
+    margin: 9px 0px;
+    border-radius: 10%;
+}
+
+#mintbutton:hover {
+    background-color: #2b7bb8;
+}
+
+
+
+.navigation ul span a .text {
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+
+
+.navigation.open ul span a .text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation ul span.acitve a .text {
+    color: #1e6091;
+}
+
+.wallet:hover {
+    cursor: pointer;
+    box-shadow: 0px 0.1px 8.1px rgba(221, 248, 255, 0.433);
+}
+
+.wallet:active {
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(58, 58, 58, 0);
+    transition: 0.2s;
+
+}
+
+@media only screen and (max-width: 565px) {
+    .navigation {
+
+        position: fixed;
+        inset: 18vh 0px 2vh 0px;
+        border-radius: 0px 50px 50px 0px;
+        width: 15vw;
+        height: 40vh;
+        background-color: #fff;
+        transition: 0.5S;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        /* visibility: hidden; */
+
+    }
+
+    .navigation ul span a .icon,
+    #mintbutton {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60px;
+        height: 50px;
+        line-height: 30px;
+        color: #222;
+        border-radius: 20px;
+        font-size: 1em;
+        transition: 0.5s;
+    }
+
+    .navigation ul span {
+        list-style: none;
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0.4vh 0px 1vw;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
